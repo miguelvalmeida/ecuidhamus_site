@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 
 import * as actions from '../../store/actions/index';
 import Aux from '../../hoc/auxi';
-import { barOptions, barOptionsLegend, pieOptions, WeightHistogramOptions, HeighthistogramOptions, bgColors } from '../../utility/chartsOptions';
+import { barOptions, barOptionsLegend, pieOptions, WeightHistogramOptions, WeightHistogramOptionsLegend, HeighthistogramOptions, HeighthistogramOptionsLegend, bgColors } from '../../utility/chartsOptions';
 
 class indicator2 extends Component {
     fetchData() {
@@ -613,8 +613,8 @@ class indicator2 extends Component {
                 smokerFrequencieChart = (<Bar data={smokerFrequencieData} width={350} height={350} options={barOptionsLegend} />);
                 smokerNumberChart = (<Bar data={smokerNumberData} width={350} height={350} options={barOptionsLegend} />);
                 healthOpinionsChart = (<Bar data={healthOpinionsData} width={350} height={350} options={barOptionsLegend} />);
-                weightChart = (<Bar data={weightData} width={350} height={350} options={WeightHistogramOptions} />);
-                heightChart = (<Bar data={heightData} width={350} height={350} options={HeighthistogramOptions} />);
+                weightChart = (<Bar data={weightData} width={350} height={350} options={WeightHistogramOptionsLegend} />);
+                heightChart = (<Bar data={heightData} width={350} height={350} options={HeighthistogramOptionsLegend} />);
                 break;
 
             case ('option4'):
@@ -659,8 +659,8 @@ class indicator2 extends Component {
                 smokerFrequencieChart = (<Bar data={smokerFrequencieData} width={350} height={350} options={barOptionsLegend} />);
                 smokerNumberChart = (<Bar data={smokerNumberData} width={350} height={350} options={barOptionsLegend} />);
                 healthOpinionsChart = (<Bar data={healthOpinionsData} width={350} height={350} options={barOptionsLegend} />);
-                weightChart = (<Bar data={weightData} width={350} height={350} options={WeightHistogramOptions} />);
-                heightChart = (<Bar data={heightData} width={350} height={350} options={HeighthistogramOptions} />);
+                weightChart = (<Bar data={weightData} width={350} height={350} options={WeightHistogramOptionsLegend} />);
+                heightChart = (<Bar data={heightData} width={350} height={350} options={HeighthistogramOptionsLegend} />);
                 break;
             default:
         };

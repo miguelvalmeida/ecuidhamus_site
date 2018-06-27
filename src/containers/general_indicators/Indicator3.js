@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 
 import * as actions from '../../store/actions/index';
 import Aux from '../../hoc/auxi';
-import { barOptions, pieOptions, histogramOptions, bgColors, barOptionsLegend } from '../../utility/chartsOptions';
+import { barOptions, barOptionsLegend, pieOptions, histogramOptions, histogramOptionsLegend, bgColors } from '../../utility/chartsOptions';
 
 class indicator3 extends Component {
     fetchData() {
@@ -517,8 +517,8 @@ class indicator3 extends Component {
                         {
                             label: "Total",
                             data: medsNumberDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -673,8 +673,8 @@ class indicator3 extends Component {
                         {
                             label: "Total",
                             data: medsNumberDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -829,7 +829,7 @@ class indicator3 extends Component {
                 hasChronicChart = (<Bar data={hasChronicData} width={350} height={350} options={barOptionsLegend} />);
                 chronicValuesChart = (<Bar data={chronicValuesData} width={350} height={350} options={barOptionsLegend} />);
                 takesMedsChart = (<Bar data={takesMedsData} width={350} height={350} options={barOptionsLegend} />);
-                medsNumberChart = (<Bar data={medsNumberData} width={350} height={350} options={histogramOptions} />);
+                medsNumberChart = (<Bar data={medsNumberData} width={350} height={350} options={histogramOptionsLegend} />);
                 medsValuesChart = (<Bar data={medsValuesData} width={350} height={350} options={barOptionsLegend} />);
                 painValueChart = (<Bar data={painValueData} width={350} height={350} options={barOptionsLegend} />);
                 localPainValueChart = (<Bar data={localPainValueData} width={350} height={350} options={barOptionsLegend} />);
@@ -889,7 +889,7 @@ class indicator3 extends Component {
                 hasChronicChart = (<Bar data={hasChronicData} width={350} height={350} options={barOptionsLegend} />);
                 chronicValuesChart = (<Bar data={chronicValuesData} width={350} height={350} options={barOptionsLegend} />);
                 takesMedsChart = (<Bar data={takesMedsData} width={350} height={350} options={barOptionsLegend} />);
-                medsNumberChart = (<Bar data={medsNumberData} width={350} height={350} options={histogramOptions} />);
+                medsNumberChart = (<Bar data={medsNumberData} width={350} height={350} options={histogramOptionsLegend} />);
                 medsValuesChart = (<Bar data={medsValuesData} width={350} height={350} options={barOptionsLegend} />);
                 painValueChart = (<Bar data={painValueData} width={350} height={350} options={barOptionsLegend} />);
                 localPainValueChart = (<Bar data={localPainValueData} width={350} height={350} options={barOptionsLegend} />);

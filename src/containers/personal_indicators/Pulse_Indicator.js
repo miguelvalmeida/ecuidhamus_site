@@ -30,6 +30,15 @@ class pulse_indicator extends Component {
                         labelString: "ppm"
                     }
                 }]
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel + ' ppm';
+                    }
+                }
             }
         };
 
@@ -75,8 +84,8 @@ class pulse_indicator extends Component {
                     pointStyle: 'rectRot',
                     lineTension: 0.3,
                     pointRadius: 10,
-                    borderColor: bgColors[5],
-                    backgroundColor: bgColors[5]
+                    borderColor: bgColors[3],
+                    backgroundColor: bgColors[3]
                 },
                 {
                     label: myLabel.global,

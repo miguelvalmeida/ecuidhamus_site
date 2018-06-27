@@ -30,6 +30,15 @@ class glucose_indicator extends Component {
                         labelString: "mg / dl"
                     }
                 }]
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel + ' mg/dl';
+                    }
+                }
             }
         };
 

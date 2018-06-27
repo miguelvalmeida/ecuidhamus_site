@@ -30,6 +30,15 @@ class dbp_indicator extends Component {
                         labelString: "mmHg"
                     }
                 }]
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel + ' mmHg';
+                    }
+                }
             }
         };
 
@@ -75,8 +84,8 @@ class dbp_indicator extends Component {
                     lineTension: 0.3,
                     pointStyle: 'rectRot',
                     pointRadius: 10,
-                    borderColor: bgColors[5],
-                    backgroundColor: bgColors[5]
+                    borderColor: bgColors[3],
+                    backgroundColor: bgColors[3]
                 },
                 {
                     label: myLabel.global,

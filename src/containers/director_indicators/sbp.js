@@ -30,6 +30,15 @@ class sbp_indicator extends Component {
                         labelString: "mmHg"
                     }
                 }]
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel + ' mmHg';
+                    }
+                }
             }
         };
 

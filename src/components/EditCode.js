@@ -229,7 +229,7 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="number"><FormattedMessage id="meds-number-edit" /></label>
-                    <input type="number" step="1" />
+                    <input type="number" step="1" min="0" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="meds_values"><FormattedMessage id="meds-name-edit" /></label>
@@ -261,7 +261,7 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="number"><FormattedMessage id="meds-number-edit" /></label>
-                    <input type="number" step="1" onChange={props.medsNumberChange} />
+                    <input type="number" step="1" min="0" onChange={props.medsNumberChange} />
                 </div>
             </Aux>
         )
@@ -272,7 +272,7 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="number"><FormattedMessage id="meds-number-edit" /></label>
-                    <input type="number" step="1" onChange={props.medsNumberChange} />
+                    <input type="number" step="1" min="0" onChange={props.medsNumberChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="meds_values"><FormattedMessage id="meds-name-edit" /></label>
@@ -451,15 +451,15 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="beer"><FormattedMessage id="beers" /></label>
-                    <input type="number" step="1" id="beer" onChange={props.beerChange} />
+                    <input type="number" step="1" min="0" id="beer" onChange={props.beerChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="wine"><FormattedMessage id="wine" /></label>
-                    <input type="number" step="1" id="wine" onChange={props.wineChange} />
+                    <input type="number" step="1" min="0" id="wine" onChange={props.wineChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="spirit_drinks"><FormattedMessage id="spirit_drinks" /></label>
-                    <input type="number" step="1" id="spirit_drinks" onChange={props.spiritDrinksChange} />
+                    <input type="number" step="1" min="0" id="spirit_drinks" onChange={props.spiritDrinksChange} />
                 </div>
             </Aux>
         )
@@ -470,11 +470,11 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="wine"><FormattedMessage id="wine" /></label>
-                    <input type="number" step="1" id="wine" onChange={props.wineChange} />
+                    <input type="number" step="1" min="0" id="wine" onChange={props.wineChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="spirit_drinks"><FormattedMessage id="spirit_drinks" /></label>
-                    <input type="number" step="1" id="spirit_drinks" onChange={props.spiritDrinksChange} />
+                    <input type="number" step="1" min="0" id="spirit_drinks" onChange={props.spiritDrinksChange} />
                 </div>
             </Aux>
         )
@@ -485,11 +485,11 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="beer"><FormattedMessage id="beers" /></label>
-                    <input type="number" step="1" id="beer" onChange={props.beerChange} />
+                    <input type="number" step="1" min="0" id="beer" onChange={props.beerChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="wine"><FormattedMessage id="wine" /></label>
-                    <input type="number" step="1" id="wine" onChange={props.wineChange} />
+                    <input type="number" step="1" min="0" id="wine" onChange={props.wineChange} />
                 </div>
             </Aux>
         )
@@ -500,11 +500,11 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="beer"><FormattedMessage id="beers" /></label>
-                    <input type="number" step="1" id="beer" onChange={props.beerChange} />
+                    <input type="number" step="1" min="0" id="beer" onChange={props.beerChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="spirit_drinks"><FormattedMessage id="spirit_drinks" /></label>
-                    <input type="number" step="1" id="spirit_drinks" onChange={props.spiritDrinksChange} />
+                    <input type="number" step="1" min="0" id="spirit_drinks" onChange={props.spiritDrinksChange} />
                 </div>
             </Aux>
         )
@@ -515,7 +515,7 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="beer"><FormattedMessage id="beers" /></label>
-                    <input type="number" step="1" id="beer" onChange={props.beerChange} />
+                    <input type="number" step="1" min="0" id="beer" onChange={props.beerChange} />
                 </div>
             </Aux>
         )
@@ -526,7 +526,7 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="wine"><FormattedMessage id="wine" /></label>
-                    <input type="number" step="1" id="wine" onChange={props.wineChange} />
+                    <input type="number" step="1" min="0" id="wine" onChange={props.wineChange} />
                 </div>
             </Aux>
         )
@@ -537,7 +537,7 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="spirit_drinks"><FormattedMessage id="spirit_drinks" /></label>
-                    <input type="number" step="1" id="spirit_drinks" onChange={props.spiritDrinksChange} />
+                    <input type="number" step="1" min="0" id="spirit_drinks" onChange={props.spiritDrinksChange} />
                 </div>
             </Aux>
         )
@@ -548,15 +548,15 @@ const editCode = (props) => {
             <Aux>
                 <div className="form-group">
                     <label htmlFor="beer"><FormattedMessage id="beers" /></label>
-                    <input type="number" step="1" id="beer" onChange={props.beerChange} />
+                    <input type="number" step="1" min="0" id="beer" onChange={props.beerChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="wine"><FormattedMessage id="wine" /></label>
-                    <input type="number" step="1" id="wine" onChange={props.wineChange} />
+                    <input type="number" step="1" min="0" id="wine" onChange={props.wineChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="spirit_drinks"><FormattedMessage id="spirit_drinks" /></label>
-                    <input type="number" step="1" id="spirit_drinks" onChange={props.spiritDrinksChange} />
+                    <input type="number" step="1" min="0" id="spirit_drinks" onChange={props.spiritDrinksChange} />
                 </div>
             </Aux>
         )

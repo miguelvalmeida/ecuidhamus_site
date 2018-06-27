@@ -26,12 +26,14 @@ class CodeInfo extends Component {
 
     render() {
         let editBtn = null;
+        let classname = "btn btn-danger float-right";
         if (this.props.completed === 0) {
             editBtn = (
                 <Link to={'/edit/' + this.props.match.params.code} className="no-decoration">
-                    <button type="button" className="btn btn-warning mr-3"><FormattedMessage id="edit-button" /></button>
+                    <button type="button" className="btn btn-warning mr-3 float-left btn-lg"><FormattedMessage id="edit-button" /></button>
                 </Link>
             )
+            classname = "btn btn-danger float-left";
         };
 
         let codeData = (
@@ -92,7 +94,7 @@ class CodeInfo extends Component {
                 <div className="container mt-2">
                     {editBtn}
                     <Modal
-                        class="btn btn-danger"
+                        class={classname}
                         btnText={<FormattedMessage id="delete" />}
                         title={<FormattedMessage id="delete-code" />}
                         modalText={<FormattedMessage id="delete-message" />}

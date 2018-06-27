@@ -34,6 +34,15 @@ class weight_indicator extends Component {
                         labelString: "kg"
                     }
                 }]
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel + ' kg';
+                    }
+                }
             }
         };
 

@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 
 import * as actions from '../../store/actions/index';
 import Aux from '../../hoc/auxi';
-import { mmHgHistogramOptions, ppmHistogramOptions, mgdlHistogramOptions, bgColors } from '../../utility/chartsOptions';
+import { mmHgHistogramOptions, mmHgHistogramOptionsLegend, ppmHistogramOptions, ppmHistogramOptionsLegend, mgdlHistogramOptions, mgdlHistogramOptionsLegend, bgColors } from '../../utility/chartsOptions';
 
 class indicator6 extends Component {
     fetchData() {
@@ -406,8 +406,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: sbpValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -420,8 +420,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: dbpValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -434,8 +434,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: pulseValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -448,8 +448,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: uricAcidValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -462,8 +462,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: glucoseValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -476,8 +476,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: cholesterolValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -499,8 +499,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: sbpValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -513,8 +513,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: dbpValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -527,8 +527,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: pulseValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -541,8 +541,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: uricAcidValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -555,8 +555,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: glucoseValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -569,8 +569,8 @@ class indicator6 extends Component {
                         {
                             label: "Total",
                             data: cholesterolValues,
-                            borderColor: "#2f60af",
-                            backgroundColor: "#7394CB",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -623,12 +623,12 @@ class indicator6 extends Component {
                     datasets: cholesterolGenderData
                 };
 
-                sbpChart = (<Bar data={sbpData} width={350} height={350} options={mmHgHistogramOptions} />);
-                dbpChart = (<Bar data={dbpData} width={350} height={350} options={mmHgHistogramOptions} />);
-                pulseChart = (<Bar data={pulseData} width={350} height={350} options={ppmHistogramOptions} />);
-                uricAcidChart = (<Bar data={uricAcidData} width={350} height={350} options={mgdlHistogramOptions} />);
-                glucoseChart = (<Bar data={glucoseData} width={350} height={350} options={mgdlHistogramOptions} />);
-                cholesterolChart = (<Bar data={cholesterolData} width={350} height={350} options={mgdlHistogramOptions} />);
+                sbpChart = (<Bar data={sbpData} width={350} height={350} options={mmHgHistogramOptionsLegend} />);
+                dbpChart = (<Bar data={dbpData} width={350} height={350} options={mmHgHistogramOptionsLegend} />);
+                pulseChart = (<Bar data={pulseData} width={350} height={350} options={ppmHistogramOptionsLegend} />);
+                uricAcidChart = (<Bar data={uricAcidData} width={350} height={350} options={mgdlHistogramOptionsLegend} />);
+                glucoseChart = (<Bar data={glucoseData} width={350} height={350} options={mgdlHistogramOptionsLegend} />);
+                cholesterolChart = (<Bar data={cholesterolData} width={350} height={350} options={mgdlHistogramOptionsLegend} />);
                 break;
 
             case ('option4'):
@@ -669,12 +669,12 @@ class indicator6 extends Component {
                     datasets: cholesterolAgeData
                 };
 
-                sbpChart = (<Bar data={sbpData} width={350} height={350} options={mmHgHistogramOptions} />);
-                dbpChart = (<Bar data={dbpData} width={350} height={350} options={mmHgHistogramOptions} />);
-                pulseChart = (<Bar data={pulseData} width={350} height={350} options={ppmHistogramOptions} />);
-                uricAcidChart = (<Bar data={uricAcidData} width={350} height={350} options={mgdlHistogramOptions} />);
-                glucoseChart = (<Bar data={glucoseData} width={350} height={350} options={mgdlHistogramOptions} />);
-                cholesterolChart = (<Bar data={cholesterolData} width={350} height={350} options={mgdlHistogramOptions} />);
+                sbpChart = (<Bar data={sbpData} width={350} height={350} options={mmHgHistogramOptionsLegend} />);
+                dbpChart = (<Bar data={dbpData} width={350} height={350} options={mmHgHistogramOptionsLegend} />);
+                pulseChart = (<Bar data={pulseData} width={350} height={350} options={ppmHistogramOptionsLegend} />);
+                uricAcidChart = (<Bar data={uricAcidData} width={350} height={350} options={mgdlHistogramOptionsLegend} />);
+                glucoseChart = (<Bar data={glucoseData} width={350} height={350} options={mgdlHistogramOptionsLegend} />);
+                cholesterolChart = (<Bar data={cholesterolData} width={350} height={350} options={mgdlHistogramOptionsLegend} />);
                 break;
             default:
         };

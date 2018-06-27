@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 
 import * as actions from '../../store/actions/index';
 import Aux from '../../hoc/auxi';
-import { barOptions, barOptionsLegend, pieOptions, histogramOptions, bgColors } from '../../utility/chartsOptions';
+import { barOptions, barOptionsLegend, pieOptions, histogramOptions, histogramOptionsLegend, bgColors } from '../../utility/chartsOptions';
 
 class indicator4 extends Component {
     fetchData() {
@@ -726,8 +726,8 @@ class indicator4 extends Component {
                         {
                             label: "Total",
                             data: beerDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -740,8 +740,8 @@ class indicator4 extends Component {
                         {
                             label: "Total",
                             data: wineDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -754,8 +754,8 @@ class indicator4 extends Component {
                         {
                             label: "Total",
                             data: spiritDrinksDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -908,8 +908,8 @@ class indicator4 extends Component {
                         {
                             label: "Total",
                             data: beerDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -922,8 +922,8 @@ class indicator4 extends Component {
                         {
                             label: "Total",
                             data: wineDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -936,8 +936,8 @@ class indicator4 extends Component {
                         {
                             label: "Total",
                             data: spiritDrinksDataValues,
-                            backgroundColor: "#7394CB",
-                            borderColor: "#2f60af",
+                            backgroundColor: "#add036",
+                            borderColor: "#8a9b42",
                             borderWidth: 1,
                             tension: -1,
                         }
@@ -1025,9 +1025,9 @@ class indicator4 extends Component {
                 sodasChart = (<Bar data={sodasData} width={350} height={350} options={barOptionsLegend} />);
                 fastFoodChart = (<Bar data={fastFoodData} width={350} height={350} options={barOptionsLegend} />);
                 alcoholChart = (<Bar data={alcoholData} width={350} height={350} options={barOptionsLegend} />);
-                beerChart = (<Bar data={beerData} width={350} height={350} options={histogramOptions} />);
-                wineChart = (<Bar data={wineData} width={350} height={350} options={histogramOptions} />);
-                spiritDrinksChart = (<Bar data={spiritDrinksData} width={350} height={350} options={histogramOptions} />);
+                beerChart = (<Bar data={beerData} width={350} height={350} options={histogramOptionsLegend} />);
+                wineChart = (<Bar data={wineData} width={350} height={350} options={histogramOptionsLegend} />);
+                spiritDrinksChart = (<Bar data={spiritDrinksData} width={350} height={350} options={histogramOptionsLegend} />);
                 break;
 
             case ('option4'):
@@ -1099,9 +1099,9 @@ class indicator4 extends Component {
                 sodasChart = (<Bar data={sodasData} width={350} height={350} options={barOptionsLegend} />);
                 fastFoodChart = (<Bar data={fastFoodData} width={350} height={350} options={barOptionsLegend} />);
                 alcoholChart = (<Bar data={alcoholData} width={350} height={350} options={barOptionsLegend} />);
-                beerChart = (<Bar data={beerData} width={350} height={350} options={histogramOptions} />);
-                wineChart = (<Bar data={wineData} width={350} height={350} options={histogramOptions} />);
-                spiritDrinksChart = (<Bar data={spiritDrinksData} width={350} height={350} options={histogramOptions} />);
+                beerChart = (<Bar data={beerData} width={350} height={350} options={histogramOptionsLegend} />);
+                wineChart = (<Bar data={wineData} width={350} height={350} options={histogramOptionsLegend} />);
+                spiritDrinksChart = (<Bar data={spiritDrinksData} width={350} height={350} options={histogramOptionsLegend} />);
                 break;
             default:
         };

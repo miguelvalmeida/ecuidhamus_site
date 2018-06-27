@@ -198,7 +198,7 @@ export default {
         'physical-name-edit': "Which sports do you practice:",
         'physical-hours-edit': "How many hours per week do you practice physical exercise:",
         'alcohol-edit': "Do you consume alcohol on a weekly basis?",
-        'legends-tooltip': "*click on the graphics legends to hide or show the values",
+        'legends-tooltip': "*click on the graphics labels to hide or show the values",
         'since': "Since",
         'until': "Until",
         'completed': "Completed",

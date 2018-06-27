@@ -30,20 +30,29 @@ class uricAcid_indicator extends Component {
                         labelString: "mg / dl"
                     }
                 }]
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel + ' mg/dl';
+                    }
+                }
             }
         };
 
         const pUricAcidArray = [].concat(...this.props.personal_uric_acid);
         const personalUricAcidValues = pUricAcidArray.map(pw => pw.uric_acid);
-        personalUricAcidValues.splice(-1,1);
+        personalUricAcidValues.splice(-1, 1);
 
         const aUricAcidArray = [].concat(...this.props.uric_acid_sum);
         const averageUricAcidValues = aUricAcidArray.map(aw => aw.uric_acid);
-        averageUricAcidValues.splice(-1,1);
+        averageUricAcidValues.splice(-1, 1);
 
         const daUricAcidArray = [].concat(...this.props.dep_uricAcid_sum);
         const depAverageUricAcidValues = daUricAcidArray.map(daw => daw.uric_acid);
-        depAverageUricAcidValues.splice(-1,1);
+        depAverageUricAcidValues.splice(-1, 1);
 
         const labels = []
         for (let i = this.props.date; i <= this.props.date2; i++) {
@@ -75,8 +84,8 @@ class uricAcid_indicator extends Component {
                     pointStyle: 'rectRot',
                     lineTension: 0.3,
                     pointRadius: 10,
-                    borderColor: bgColors[5],
-                    backgroundColor: bgColors[5]
+                    borderColor: bgColors[3],
+                    backgroundColor: bgColors[3]
                 },
                 {
                     label: myLabel.global,
